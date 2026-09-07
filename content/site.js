@@ -1,5 +1,5 @@
 export const site = {
-  brand: { name: "LOBİ", descriptor: "İÇ MİMARLIK", logo: "/media/brand/logo.svg" },
+  brand: { name: "LOB", descriptor: "İÇ MİMARLIK", logo: "/media/brand/logo.svg" },
   hero: {
     eyebrow: "İÇ MİMARLIK · TASARIM · MEKÂNSAL DENEYİM",
     title: "Mekân sadece görülen değil, hissedilen bir deneyimdir.",
