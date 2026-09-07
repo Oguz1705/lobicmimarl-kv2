@@ -1,34 +1,59 @@
-.panel-nav {
+.panel nav {
   margin: auto 0;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
-.panel-nav button {
+/* Hem LINK hem BUTTON aynı görünsün */
+.panel nav > a,
+.panel nav > button {
   width: 100%;
+  min-height: 72px;
   padding: 18px 0;
+
   border: 0;
   border-top: 1px solid rgba(60, 57, 49, 0.18);
+
   background: transparent;
   color: inherit;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   font-size: 21px;
+  font-weight: 400;
+  line-height: 1;
+
   cursor: pointer;
   text-align: left;
+  text-decoration: none;
 }
 
-.panel-nav button:last-child {
+/* Son satırın altında da çizgi */
+.panel nav > a:last-child,
+.panel nav > button:last-child {
   border-bottom: 1px solid rgba(60, 57, 49, 0.18);
 }
 
-.panel-nav button span {
+/* Yazı */
+.panel nav > a span,
+.panel nav > button span {
   display: block;
+  transition: transform 0.25s ease;
 }
 
-.panel-nav button b {
+/* Sağdaki ok */
+.panel nav > a b,
+.panel nav > button b {
   font-size: 12px;
   font-weight: 400;
   opacity: 0.55;
+}
+
+/* Hover */
+.panel nav > a:hover span,
+.panel nav > button:hover span {
+  transform: translateX(8px);
 }
