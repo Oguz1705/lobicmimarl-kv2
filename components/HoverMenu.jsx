@@ -67,7 +67,7 @@ export default function HoverMenu() {
 
         <div className="panel-foot">
           <span>İstanbul · Türkiye</span>
-          <span>© 2026 LOBİ</span>
+          <span>© 2026 LOB</span>
         </div>
       </aside>
     </div>
