@@ -764,3 +764,30 @@ a {
     font-size: 14px;
   }
 }
+.panel nav a {
+  width: 100%;
+  padding: 18px 0;
+  border-top: 1px solid #3c39312e;
+  background: transparent;
+  color: inherit;
+  display: flex;
+  justify-content: space-between;
+  font-size: 21px;
+  cursor: pointer;
+  text-align: left;
+  text-decoration: none;
+}
+
+.panel nav a span {
+  transition: transform .25s;
+}
+
+.panel nav a:hover span {
+  transform: translateX(8px);
+}
+
+.panel nav a b {
+  font-size: 12px;
+  font-weight: 400;
+  opacity: .55;
+}
