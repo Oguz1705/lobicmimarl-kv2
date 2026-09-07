@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { site } from "@/content/site";
+import Link from "next/link";
 
 export default function HoverMenu() {
   const [open, setOpen] = useState(false);
@@ -24,30 +24,38 @@ export default function HoverMenu() {
 
       <aside className="panel">
         <div className="panel-brand">
-          <b>LOBİ</b>
+          <b>LOB</b>
           <small>İÇ MİMARLIK</small>
         </div>
 
         <nav className="panel-nav">
-          <button type="button" onClick={(e) => e.preventDefault()}>
+
+          <Link href="/">
             <span>Ana Sayfa</span>
             <b>↗</b>
-          </button>
+          </Link>
 
-          <button type="button" onClick={(e) => e.preventDefault()}>
+          <Link href="/projeler">
             <span>Projeler</span>
             <b>↗</b>
-          </button>
+          </Link>
 
-          <button type="button" onClick={(e) => e.preventDefault()}>
+          <button
+            type="button"
+            onClick={(e) => e.preventDefault()}
+          >
             <span>Hakkımızda</span>
             <b>↗</b>
           </button>
 
-          <button type="button" onClick={(e) => e.preventDefault()}>
+          <button
+            type="button"
+            onClick={(e) => e.preventDefault()}
+          >
             <span>İletişim</span>
             <b>↗</b>
           </button>
+
         </nav>
 
         <div className="socials">
